@@ -1,1 +1,3 @@
-lol
+Hallo an Coding Schule (FearlessDark/ChampofGames)
+Das wird unser Lobbysystem mit vielen Features
+...
