@@ -49,7 +49,7 @@ class Admin extends PluginBase implements Listener
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
     {
-        switch ($command->getName()){
+        switch (strtolower($command->getName())){
             case "admin":
                 if ($sender instanceof Player) {
                     if (empty($args[0])) {
