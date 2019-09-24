@@ -15,3 +15,6 @@ commands:
     description: Für Admins | /admin - öffnet UI  /admin help
     usage: /admin
     permission: admin.use
+  teleporter:
+    description: Teleport UI
+    usage: /teleporter
