@@ -21,10 +21,10 @@ class Main extends PluginBase{
             case "spawn":
                 $cfg = new Config($this->getDataFolder() . "Spawn.yml", Config::YAML);
                 $cfg1 = $cfg->get("spawn");
-                $x = $cfg["x"];
-                $y = $cfg["y"];
-                $z = $cfg["z"];
-                $level = $cfg["welt"];
+                $x = $cfg1["x"];
+                $y = $cfg1["y"];
+                $z = $cfg1["z"];
+                $level = $cfg1["welt"];
                 $sender->teleport(new Position($x, $y, $z, $level));
         }
         return true;
