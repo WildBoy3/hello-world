@@ -28,15 +28,18 @@ use pocketmine\utils\Textformat as Color;
 class more extends PluginBase
 {
     public $prefix = "§f[§1join§f]";
-
-    public function onEnable(){
-    }
-
-    public function onDisable(){
-    }
-
+    
+    
+    
     public function onJoin(PlayerJoinEvent $playerJoinEvent){
         $player = $playerJoinEvent->getPlayer();
+        $cfg = new Config($this->getDataFolder() . "Spawn.yml", Config::YAML);
+        $cfg1 = $cfg->get("spawn");
+        $x = $cfg["x"];
+        $y = $cfg["y"];
+        $z = $cfg["z"];
+        $level = $cfg["welt"];
+        $player->teleport(new Position($x, $y, $z, $level);
         $playerJoinEvent->setJoinMessage($this->prefix . $player->getName() . " hat das Spiel betreten!");
         $this->getItems($player);
     }
