@@ -23,7 +23,7 @@ class Main extends PluginBase{
                 $y = $cfg["y"];
                 $z = $cfg["z"];
                 $level = $cfg["welt"];
-                $sender->teleport(new Position($x, $y, $z, $level);
+                $sender->teleport(new Position($x, $y, $z, $level));
         }
         return true;
     }
