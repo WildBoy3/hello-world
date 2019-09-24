@@ -30,11 +30,9 @@ class more extends PluginBase
     public $prefix = "§f[§1join§f]";
 
     public function onEnable(){
-        $this->getLogger()->info(C::DARK_BLUE . "Das Plugin wurde geladen!");
     }
 
     public function onDisable(){
-    $this->getLogger()->info(C::DARK_RED . "Plugin ist deaktiviert made by Chef");
     }
 
     public function onJoin(PlayerJoinEvent $playerJoinEvent){
@@ -59,8 +57,8 @@ class more extends PluginBase
         $partyui = Item::get(Item::STOCK);
         $partyui->setCustomName("§2Party_UI");
         $profilui = Item::get(Item::STEVE_KOPF);
-        $adminshop = Item::get(Item::END_CRYSTAL);
-        $adminshop->setCustomName("§7admin shop");
+        $adminshop = Item::get(Item::NETHER_STAR);
+        $adminshop->setCustomName("§7Admin UI");
 
         $player->getInventory()->setItem(4, $compass);
         $player->getInventory()->setItem(1, $hider);
@@ -68,4 +66,5 @@ class more extends PluginBase
         $player->getInventory()->setItem(0, $profilui);
         $player->getInventory()->setItem(8, $adminshop);
     }
+    
 }
