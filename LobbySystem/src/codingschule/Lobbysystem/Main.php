@@ -1,6 +1,6 @@
 <?php
 
-namespace test;
+namespace codingschule\Lobbysytem;
 
 use pocketmine\event\Listener;
 use pocketmine\Player;
