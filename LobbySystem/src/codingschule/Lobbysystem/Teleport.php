@@ -69,5 +69,12 @@ class Teleporter extends PluginBase{
         return true;
 
     }
+    public function Item(PlayerInteractEvent $event){
+        $player = $event->getPlayer();
+        $item = $player->getInventory()->getItemInHand();
+        if ($item == Item::COMPASS){
+            $this->MainUI($player);
+        }
+    }
 
 }
