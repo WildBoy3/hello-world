@@ -10,7 +10,7 @@ use codingschule\Lobbysystem\Teleport;
 class Main extends PluginBase{
     public function onEnable()
     {
-        $cfg = new Config($this->getDataFolder() . "Spawn.yml", Config::YAML);
+        $this->saveResource("Spawn.yml");
     }
     
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
@@ -18,7 +18,11 @@ class Main extends PluginBase{
         switch($command->getName()){
             case "spawn":
                 $cfg = new Config($this->getDataFolder() . "Spawn.yml", Config::YAML);
-                $cfg
+                $cfg1 = $cfg->get("spawn");
+                $x = $cfg["x"];
+                $y = $cfg["y"];
+                $z = $cfg["z"];
+                $level = $cfg["welt"];
         }
         return true;
     }
