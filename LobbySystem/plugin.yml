@@ -6,4 +6,8 @@ author:
   - Wildboy
   - ceepkev77
   - Firebro
-
+commands:
+  spawn:
+    description: Teleportiert dich zum Spawn der Lobby
+    usage: /spawn
+    aliases: ["hub","lobby"]
