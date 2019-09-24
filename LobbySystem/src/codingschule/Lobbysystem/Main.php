@@ -15,7 +15,7 @@ class Main extends PluginBase{
     
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
     {
-        switch($command->getName()){
+        switch(strtolower($command->getName())){
             case "spawn":
                 $cfg = new Config($this->getDataFolder() . "Spawn.yml", Config::YAML);
                 $cfg1 = $cfg->get("spawn");
