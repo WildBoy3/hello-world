@@ -11,3 +11,7 @@ commands:
     description: Teleportiert dich zum Spawn der Lobby
     usage: /spawn
     aliases: ["hub","lobby"]
+  admin:
+    description: Für Admins | /admin - öffnet UI  /admin help
+    usage: /admin
+    permission: admin.use
