@@ -3,6 +3,8 @@
 namespace codingschule\Lobbysytem;
 
 use pocketmine\event\Listener;
+use pocketmine\command\CommandSender;
+use pocketmine\command\Command;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat;
 use codingschule\Lobbysystem\Teleport;
@@ -10,7 +12,7 @@ use codingschule\Lobbysystem\Teleport;
 class Main extends PluginBase{
     public function onEnable()
     {
-        $this->saveResource("Spawn.yml");
+        $this->saveResource("spawn.yml");
     }
     
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
