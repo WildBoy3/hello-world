@@ -7,7 +7,6 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat;
-use codingschule\Lobbysystem\Teleport;
 
 class Main extends PluginBase{
     public function onEnable()
