@@ -314,5 +314,12 @@ class Admin extends PluginBase implements Listener
         }
 
     }
+    public function Item(PlayerInteractEvent $event){
+        $player = $event->getPlayer();
+        $item = $player->getInventory()->getItemInHand();
+        if ($item == Item::NETHER_STAR){
+            $this->MainUI($player);
+        }
+    }
 
 }
