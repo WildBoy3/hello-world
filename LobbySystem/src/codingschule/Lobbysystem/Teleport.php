@@ -1,6 +1,6 @@
 <?php
 
-namespace cs;
+namespace codingschule\Lobbysytem;
 
 use cs\ui\Test\Test;
 use jojoe77777\FormAPI\SimpleForm;
