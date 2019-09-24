@@ -1,6 +1,6 @@
 <?php
 
-namespace join;
+namespace codingschule\Lobbysytem;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -25,7 +25,7 @@ use pocketmine\plugin\PluginBase;
 
 use pocketmine\utils\Textformat as Color;
 
-class more extends PluginBase
+class join extends PluginBase
 {
     public $prefix = "§f[§1join§f]";
     
